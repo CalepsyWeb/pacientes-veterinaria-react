@@ -1,0 +1,11 @@
+/* Estilos particulares */
+.fondo-oscuro{
+    background-color: var(--fondo-oscuro);
+}
+.fondo-claro{
+    background-color: var(--color-primario);
+}
+.fondo-clarisimo{
+    background-color: var(--color-secundario);
+}
+

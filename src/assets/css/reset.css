@@ -1,0 +1,155 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    -ms-text-size-ajust: 100%;
+    -moz-text-size-ajust: 100%;
+    -webkit-text-size-ajust: 100%;
+    font-size: 16px;
+    border: 0;
+    
+  }
+
+  :root {
+      --blanco: #f2f2f2;
+      --negro: #1b1d23;
+      --gris: #969FB0;
+      --fondo-oscuro: #282c34;
+      --color-primario: #C5CAD3;
+      --color-secundario: #F3F4F6;
+      --color-cta: #61DBFB;
+      --hover-cta: #90e2f7;
+      --sombra-general: rgba(18, 18, 18, 0.3);
+  }
+
+  body{
+      overflow-x: hidden;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+ 
+
+  /* Estilo Títulos */
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+h1{
+    font-size: 32px;
+    font-size: 2rem;
+}
+h2{
+    font-size: 28px;
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+h5, a, abbr, b, code, dfn, em, i, li, mark, p, pre, strong{
+    font-size: 16px;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: var(--color-cta);
+}
+
+/* Estilos etiquetas y listas */
+abbr, dfn, em, i{
+    font-style: italic;
+}
+
+b, strong{
+    font-weight: bold;
+}
+ol, ul {
+	list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+hr{
+    margin: 16px auto;
+    margin: 1rem auto;
+    width: 100%;
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-primario);
+}
+
+/* Media */
+img, audio, video, iframe, canvas, svg, picture {
+    /*
+    display: inline-block;
+    vertical-align: baseline;
+    */
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/* formularios */
+
+input, outgroup, option, select, textarea {
+    padding: 4px;
+    padding: .25rem;
+    font-family: inherit;
+    font-size: 16px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"], input[type="checkbox"], input[type="radio"], label, select {
+    cursor: pointer;
+}
+
+button,
+input[type="button"]{
+    background-color: var(--color-cta);
+    padding: 15px 30px;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+button:hover{
+    background-color: var(--hover-cta);
+}
+
+.button-shadow{
+    box-shadow: 0px 18px 40px -12px var(--color-cta);  
+}
+
+
+*[disabled]{
+    cursor: default;
+    color: #999;
+    background-color: #ddd;
+}
+
+::-moz-selection {
+    color: var(--color-cta);
+    background-color: var(--color-primario);
+}
+::selection {
+    color: var(--color-cta);
+    background-color: var(--color-primario);
+}
